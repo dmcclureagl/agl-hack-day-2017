@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './header/header.component';
+import { MobileHeaderComponent } from './header/mobile-header/mobile-header.component';
 
 // Kendo
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -15,7 +16,8 @@ import { LandingPageComponent } from './my-account/landing-page/landing-page.com
   declarations: [
     AppComponent,
     HeaderComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    MobileHeaderComponent
   ],
   imports: [
     BrowserModule,

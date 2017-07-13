@@ -1,0 +1,47 @@
+.mobile-header {
+    display: none;
+    position: fixed;
+    padding: 15px;
+    height: 50px;
+    width: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: uppercase;
+	font-weight: 600;	
+    letter-spacing: 2px;	
+}
+
+@media (max-width: 835px) {
+  .mobile-header {
+    display: block;
+  }
+}
+
+.login {
+    float: right;
+}
+
+.header-logo {
+    height: 30px;
+    margin-top: -5px;
+}
+
+.login-logo {
+    height: 15px;	
+    display: inline-block;
+    margin-bottom: -1px;
+}
+
+.block {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.header-burger {
+    width: 18px;
+    margin-bottom: 9px;
+    margin-right: 8px;
+}
+
+.hero-image {
+    width: 100%;
+}

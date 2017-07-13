@@ -3,24 +3,28 @@
 
 .landing-bg {
     width: 100%;
-    height: 520px;
-    background: grey;
+    /*height: 520px;*/
+    /*background: url('../../../assets/svg/solar_yo.jpg');*/
 	color: #FFFFFF;	
     font-family: 'Titillium Web', sans-serif;	
     font-weight: 600;
+    position: relative;
 }
 
 .landing-info-box {
+    background-color: white;
     margin: 0 auto;
-    margin-top: -108px;
-    width: 830px;
+    margin-top: -10%;
+    width: 100%;
+    max-width: 830px;
     height: 400px;
-    background: lightblue;
     display: flex;
     justify-content: space-between;
     text-align: center;
     color: #333;
     box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1;
 }
 
 .harness {
@@ -44,7 +48,7 @@
 .image {
     width: 148px;
     height: 148px;
-    background: pink;
+    background: lightblue;
     border: 1px solid #D8D8D8;
     margin: 0 auto;
 }
@@ -63,8 +67,19 @@
 
 .hero-content-wrap {
     margin: 0 auto;
-    width: 830px;
-    padding-top: 125px;
+    max-width: 830px;
+    width: 100%;
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-46.15%, -50%);
+    margin-left: -30px;
+}
+
+@media (max-width: 992px) {
+  .hero-content-wrap {
+    text-align: center;
+  }
 }
 
 .hero-header {
@@ -78,5 +93,15 @@
 }
 
 .hero-button {
-    margin-top: 50px;
+    margin-top: 4vw;
+}
+
+.hero-image {
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+  .hero-image {
+    width: 1000px;
+  }
 }
