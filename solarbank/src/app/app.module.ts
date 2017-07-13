@@ -19,6 +19,7 @@ import { LoggedInService } from './logged-in.service';
 
 import { LandingPageComponent } from './my-account/landing-page/landing-page.component';
 import { GraphsComponent } from './my-account/graphs/graphs.component';
+import { UserpageComponent } from './my-account/userpage/userpage.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { GraphsComponent } from './my-account/graphs/graphs.component';
     HeaderComponent,
     LandingPageComponent,
     MobileHeaderComponent,
-    GraphsComponent
+    GraphsComponent,
+    UserpageComponent
   ],
   imports: [
     BrowserModule,

@@ -75,6 +75,11 @@
     padding-top: 20px;
 }
 
+.image img {
+    width: 115px;
+    margin-top: 7px;
+}
+
 .yellow {
     color: #FFE344;
 }

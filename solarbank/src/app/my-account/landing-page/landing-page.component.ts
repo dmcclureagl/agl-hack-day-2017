@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LoggedInService } from '../../logged-in.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-landing-page',
@@ -9,7 +10,8 @@ import { LoggedInService } from '../../logged-in.service';
 export class LandingPageComponent implements OnInit {
 
   constructor(
-    private loggedInService: LoggedInService
+    private loggedInService: LoggedInService,
+    private router: Router
   ) { }
 
   ngOnInit() {
@@ -17,6 +19,7 @@ export class LandingPageComponent implements OnInit {
 
   public login() {
     this.loggedInService.logIn();
+    this.router.navigateByUrl('home');
   }
 
 }
