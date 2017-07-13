@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './header/header.component';
+import { MobileHeaderComponent } from './header/mobile-header/mobile-header.component';
 
 // Kendo
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -25,6 +26,7 @@ import { UserpageComponent } from './my-account/userpage/userpage.component';
     AppComponent,
     HeaderComponent,
     LandingPageComponent,
+    MobileHeaderComponent,
     GraphsComponent,
     UserpageComponent
   ],

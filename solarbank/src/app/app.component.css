@@ -4,3 +4,9 @@
     width: 100%;
     margin: 0px auto;
 }
+
+@media (max-width: 835px) {
+  .app-container  {
+    padding-top: 50px;
+  }
+}
