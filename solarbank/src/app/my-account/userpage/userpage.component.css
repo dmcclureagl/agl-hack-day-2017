@@ -69,3 +69,19 @@
     padding-bottom: 20px;
     display: block;
 }
+
+@media only screen and (max-width : 1050px) {
+    .column {
+        width: 100%;
+        display: inline-block;
+        margin: 0px 0 30px 0;
+    }
+
+    .intro {
+        padding-bottom: 20px;
+    }
+
+    .tile {
+        margin: 0px 0 30px 0;
+    }
+}
