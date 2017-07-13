@@ -9,13 +9,13 @@ import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DialogModule } from '@progress/kendo-angular-dialog';
 
-import { HomeComponent } from './my-account/home/home.component';
+import { LandingPageComponent } from './my-account/landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
