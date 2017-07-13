@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+/* Reset */
+html,
+body,
+div {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: auto;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Box-sizing border-box */
+* {
+  box-sizing: border-box;
+}
