@@ -1,9 +1,13 @@
 <div class="header">
   <div class="header-wrapper">
     <img class="header-logo" src="assets/svg/icon_agl.svg" alt="logo">
-    <div class="header-links">
+    <div class="header-links" *ngIf="!isAuthenticated()">
       <div class="header-link"><a routerLink="/" routerLinkActive="active-link">Home</a></div>
       <div class="header-link"><a routerLink="/how-it-works" routerLinkActive="active-link">How it works</a></div>
+    </div>
+    <div class="header-links" *ngIf="isAuthenticated()">
+      <div class="header-link"><a routerLink="/home" routerLinkActive="active-link">My Account</a></div>
+      <div class="header-link"><a routerLink="/graphs" routerLinkActive="active-link">Graths</a></div>
     </div>
     <div class="header-login">
       <img src="assets/svg/icon_person.svg" alt="login icon" class="login-logo">

@@ -23,4 +23,12 @@ export class HeaderComponent implements OnInit {
     }
   }
 
+  public isAuthenticated() {
+    if (this.loggedInService.loggedin) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
 }
