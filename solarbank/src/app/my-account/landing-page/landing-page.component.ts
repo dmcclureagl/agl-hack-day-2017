@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoggedInService } from '../../logged-in.service';
 
 @Component({
   selector: 'app-landing-page',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private loggedInService: LoggedInService
+  ) { }
 
   ngOnInit() {
+  }
+
+  public login() {
+    this.loggedInService.logIn();
   }
 
 }

@@ -13,6 +13,9 @@ import { LayoutModule } from '@progress/kendo-angular-layout';
 import { ChartsModule } from '@progress/kendo-angular-charts';
 import 'hammerjs';
 
+// Services
+import { LoggedInService } from './logged-in.service';
+
 import { LandingPageComponent } from './my-account/landing-page/landing-page.component';
 import { GraphsComponent } from './my-account/graphs/graphs.component';
 
@@ -32,7 +35,9 @@ import { GraphsComponent } from './my-account/graphs/graphs.component';
     HttpModule,
     ChartsModule
   ],
-  providers: [],
+  providers: [
+    LoggedInService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
