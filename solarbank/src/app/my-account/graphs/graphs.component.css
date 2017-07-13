@@ -1,6 +1,6 @@
 #agl-tabs {
-    margin-top: 70px;
     box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+    margin: 0 20px;
 }
 
 #agl-tabs .k-reset.k-tabstrip-items {
@@ -38,4 +38,9 @@
     height: 100%;
     text-align: center;
     display: grid;
+}
+
+h1 {
+    font-size: 24px;
+    padding-left: 20px;
 }

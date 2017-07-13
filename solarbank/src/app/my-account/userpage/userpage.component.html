@@ -1,4 +1,7 @@
 <div class="page-container">
+  <div class="intro">
+    Hi, {{name}} welcome to your Solarbank dashboard.
+  </div>
   <div class="container">
       <div class="column">
           <div class="title">Your energy storage</div>
@@ -45,4 +48,6 @@
           <button type="button" class="user-button-100-2 big-button hero-button" (click)="deposit('donate')">Donate</button>
       </div>
   </div>
+
+  <app-graphs></app-graphs>
 </div>

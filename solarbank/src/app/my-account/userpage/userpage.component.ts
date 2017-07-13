@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoggedInService } from '../../logged-in.service';
 
 @Component({
   selector: 'app-userpage',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./userpage.component.css']
 })
 export class UserpageComponent implements OnInit {
+
+  public name;
 
   public data: any[] = [
     {
@@ -16,9 +19,12 @@ export class UserpageComponent implements OnInit {
     }
   ];
 
-  constructor() { }
+  constructor(
+    private loggedInService: LoggedInService
+  ) { }
 
   ngOnInit() {
+    this.name = this.loggedInService.name;
   }
 
   public labelContent(e: any): string {

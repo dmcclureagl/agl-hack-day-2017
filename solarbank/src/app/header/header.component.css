@@ -43,6 +43,11 @@
     float: right;
 }
 
+.header-login:hover {
+    color: #001CB0;
+    cursor: pointer;
+}
+
 .login-logo {
 	height: 15px;	
     display: inline-block;

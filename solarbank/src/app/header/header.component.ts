@@ -31,4 +31,8 @@ export class HeaderComponent implements OnInit {
     }
   }
 
+  public login() {
+    this.loggedInService.logIn();
+  }
+
 }

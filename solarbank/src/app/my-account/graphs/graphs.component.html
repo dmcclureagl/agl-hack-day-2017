@@ -1,114 +1,113 @@
-<div class="page-container">
-  <kendo-tabstrip id="agl-tabs">
-    <kendo-tabstrip-tab [title]="'Today'" [selected]="true">
-      <ng-template kendoTabContent>
+<h1>Market performance</h1>
+<kendo-tabstrip id="agl-tabs">
+  <kendo-tabstrip-tab [title]="'Today'" [selected]="true">
+    <ng-template kendoTabContent>
 
-        <kendo-chart>
-          <kendo-chart-title text="SURPLUS ENERGY 14 JULY 2017" font="bold 16px Titillium Web, sans-serif" color="#333"></kendo-chart-title>
-          <kendo-chart-category-axis>
-            <kendo-chart-category-axis-item
-                [majorGridLines]="{ visible: false }"
-                [categories]="['12 AM', '2 AM', '4 AM', '6 AM', '8 AM', '10 AM', '12 PM', '2 PM', '4 PM', '6 PM', '8 PM', '10 PM', '12 AM']"
-                [title]="{ text: 'Hour of day', font: 'bold 16px Open Sans, sans-serif' }"
-                color="#333">
-            </kendo-chart-category-axis-item>
-          </kendo-chart-category-axis>
-          <kendo-chart-value-axis>
-            <kendo-chart-value-axis-item
-            [title]="{ text: 'Benefit ($)', font: 'bold 16px Titillium Web, sans-serif' }"
-            color="#333">
-            </kendo-chart-value-axis-item>
-          </kendo-chart-value-axis>
-          <kendo-chart-series>
-            <kendo-chart-series-item
-              type="area"
-              [data]="[0, 0, 15, 0, 0, 17, 6, 15, 50, 25, 30, 10, 0]"
-              color="#e5fbfd">
-            </kendo-chart-series-item>
+      <kendo-chart>
+        <kendo-chart-title text="SURPLUS ENERGY 14 JULY 2017" font="bold 16px Titillium Web, sans-serif" color="#333"></kendo-chart-title>
+        <kendo-chart-category-axis>
+          <kendo-chart-category-axis-item
+              [majorGridLines]="{ visible: false }"
+              [categories]="['12 AM', '2 AM', '4 AM', '6 AM', '8 AM', '10 AM', '12 PM', '2 PM', '4 PM', '6 PM', '8 PM', '10 PM', '12 AM']"
+              [title]="{ text: 'Hour of day', font: 'bold 16px Open Sans, sans-serif' }"
+              color="#333">
+          </kendo-chart-category-axis-item>
+        </kendo-chart-category-axis>
+        <kendo-chart-value-axis>
+          <kendo-chart-value-axis-item
+          [title]="{ text: 'Benefit ($)', font: 'bold 16px Titillium Web, sans-serif' }"
+          color="#333">
+          </kendo-chart-value-axis-item>
+        </kendo-chart-value-axis>
+        <kendo-chart-series>
+          <kendo-chart-series-item
+            type="area"
+            [data]="[0, 0, 15, 0, 0, 17, 6, 15, 50, 25, 30, 10, 0]"
+            color="#e5fbfd">
+          </kendo-chart-series-item>
 
-            <kendo-chart-series-item
-              dashType="solid"
-              [markers]="{visible: false}"
-              type="line"
-              [data]="[0, 0, 15, 0, 0, 17, 6, 15, 50, 25, 30, 10, 0]"
-              color="#5eebf4">
-            </kendo-chart-series-item>
-          </kendo-chart-series>
-        </kendo-chart>
+          <kendo-chart-series-item
+            dashType="solid"
+            [markers]="{visible: false}"
+            type="line"
+            [data]="[0, 0, 15, 0, 0, 17, 6, 15, 50, 25, 30, 10, 0]"
+            color="#5eebf4">
+          </kendo-chart-series-item>
+        </kendo-chart-series>
+      </kendo-chart>
 
-      </ng-template>
-    </kendo-tabstrip-tab>
-    <kendo-tabstrip-tab [title]="'This Month'">
-      <ng-template kendoTabContent>
-        <kendo-chart>
-          <kendo-chart-title text="SURPLUS ENERGY JULY 2017" font="bold 16px Titillium Web, sans-serif" color="#333"></kendo-chart-title>
-          <kendo-chart-category-axis>
-            <kendo-chart-category-axis-item
-                [majorGridLines]="{ visible: false }"
-                [categories]="['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31']"
-                [title]="{ text: 'Day of month', font: 'bold 16px Open Sans, sans-serif' }"
-                color="#333">
-            </kendo-chart-category-axis-item>
-          </kendo-chart-category-axis>
-          <kendo-chart-value-axis>
-            <kendo-chart-value-axis-item
-            [title]="{ text: 'Benefit ($)', font: 'bold 16px Titillium Web, sans-serif' }"
-            color="#333">
-            </kendo-chart-value-axis-item>
-          </kendo-chart-value-axis>
-          <kendo-chart-series>
-            <kendo-chart-series-item
-              type="area"
-              [data]="[0, 0, 30, 0, 50, 17, 80, 15, 50, 25, 30, 10, 0, 200, 80, 100, 56, 20, 10, 0, 0, 23, 0, 45, 24, 10, 15, 8, 4, 0]"
-              color="#e5fbfd">
-            </kendo-chart-series-item>
+    </ng-template>
+  </kendo-tabstrip-tab>
+  <kendo-tabstrip-tab [title]="'This Month'">
+    <ng-template kendoTabContent>
+      <kendo-chart>
+        <kendo-chart-title text="SURPLUS ENERGY JULY 2017" font="bold 16px Titillium Web, sans-serif" color="#333"></kendo-chart-title>
+        <kendo-chart-category-axis>
+          <kendo-chart-category-axis-item
+              [majorGridLines]="{ visible: false }"
+              [categories]="['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31']"
+              [title]="{ text: 'Day of month', font: 'bold 16px Open Sans, sans-serif' }"
+              color="#333">
+          </kendo-chart-category-axis-item>
+        </kendo-chart-category-axis>
+        <kendo-chart-value-axis>
+          <kendo-chart-value-axis-item
+          [title]="{ text: 'Benefit ($)', font: 'bold 16px Titillium Web, sans-serif' }"
+          color="#333">
+          </kendo-chart-value-axis-item>
+        </kendo-chart-value-axis>
+        <kendo-chart-series>
+          <kendo-chart-series-item
+            type="area"
+            [data]="[0, 0, 30, 0, 50, 17, 80, 15, 50, 25, 30, 10, 0, 200, 80, 100, 56, 20, 10, 0, 0, 23, 0, 45, 24, 10, 15, 8, 4, 0]"
+            color="#e5fbfd">
+          </kendo-chart-series-item>
 
-            <kendo-chart-series-item
-              dashType="solid"
-              [markers]="{visible: false}"
-              type="line"
-              [data]="[0, 0, 30, 0, 50, 17, 80, 15, 50, 25, 30, 10, 0, 200, 80, 100, 56, 20, 10, 0, 0, 23, 0, 45, 24, 10, 15, 8, 4, 0]"
-              color="#5eebf4">
-            </kendo-chart-series-item>
-          </kendo-chart-series>
-        </kendo-chart>
-      </ng-template>
-    </kendo-tabstrip-tab>
-    <kendo-tabstrip-tab [title]="'This Year'">
-      <ng-template kendoTabContent>
-        <kendo-chart>
-          <kendo-chart-title text="YEAR TO DATE" font="bold 16px Titillium Web, sans-serif" color="#333"></kendo-chart-title>
-          <kendo-chart-category-axis>
-            <kendo-chart-category-axis-item
-                [majorGridLines]="{ visible: false }"
-                [categories]="['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JULY']"
-                [title]="{ text: 'Months', font: 'bold 16px Open Sans, sans-serif' }"
-                color="#333">
-            </kendo-chart-category-axis-item>
-          </kendo-chart-category-axis>
-          <kendo-chart-value-axis>
-            <kendo-chart-value-axis-item
-            [title]="{ text: 'Benefit ($)', font: 'bold 16px Titillium Web, sans-serif' }"
-            color="#333">
-            </kendo-chart-value-axis-item>
-          </kendo-chart-value-axis>
-          <kendo-chart-series>
-            <kendo-chart-series-item
-              type="area"
-              [data]="[10, 12, 15, 5, 3, 19, 25]"
-              color="#e5fbfd">
-            </kendo-chart-series-item>
+          <kendo-chart-series-item
+            dashType="solid"
+            [markers]="{visible: false}"
+            type="line"
+            [data]="[0, 0, 30, 0, 50, 17, 80, 15, 50, 25, 30, 10, 0, 200, 80, 100, 56, 20, 10, 0, 0, 23, 0, 45, 24, 10, 15, 8, 4, 0]"
+            color="#5eebf4">
+          </kendo-chart-series-item>
+        </kendo-chart-series>
+      </kendo-chart>
+    </ng-template>
+  </kendo-tabstrip-tab>
+  <kendo-tabstrip-tab [title]="'This Year'">
+    <ng-template kendoTabContent>
+      <kendo-chart>
+        <kendo-chart-title text="YEAR TO DATE" font="bold 16px Titillium Web, sans-serif" color="#333"></kendo-chart-title>
+        <kendo-chart-category-axis>
+          <kendo-chart-category-axis-item
+              [majorGridLines]="{ visible: false }"
+              [categories]="['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JULY']"
+              [title]="{ text: 'Months', font: 'bold 16px Open Sans, sans-serif' }"
+              color="#333">
+          </kendo-chart-category-axis-item>
+        </kendo-chart-category-axis>
+        <kendo-chart-value-axis>
+          <kendo-chart-value-axis-item
+          [title]="{ text: 'Benefit ($)', font: 'bold 16px Titillium Web, sans-serif' }"
+          color="#333">
+          </kendo-chart-value-axis-item>
+        </kendo-chart-value-axis>
+        <kendo-chart-series>
+          <kendo-chart-series-item
+            type="area"
+            [data]="[10, 12, 15, 5, 3, 19, 25]"
+            color="#e5fbfd">
+          </kendo-chart-series-item>
 
-            <kendo-chart-series-item
-              dashType="solid"
-              [markers]="{visible: false}"
-              type="line"
-              [data]="[10, 12, 15, 5, 3, 19, 25]"
-              color="#5eebf4">
-            </kendo-chart-series-item>
-          </kendo-chart-series>
-        </kendo-chart>
-      </ng-template>
-    </kendo-tabstrip-tab>
-  </kendo-tabstrip>
-</div>
+          <kendo-chart-series-item
+            dashType="solid"
+            [markers]="{visible: false}"
+            type="line"
+            [data]="[10, 12, 15, 5, 3, 19, 25]"
+            color="#5eebf4">
+          </kendo-chart-series-item>
+        </kendo-chart-series>
+      </kendo-chart>
+    </ng-template>
+  </kendo-tabstrip-tab>
+</kendo-tabstrip>
