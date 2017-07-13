@@ -20,6 +20,7 @@ import { LoggedInService } from './logged-in.service';
 import { LandingPageComponent } from './my-account/landing-page/landing-page.component';
 import { GraphsComponent } from './my-account/graphs/graphs.component';
 import { UserpageComponent } from './my-account/userpage/userpage.component';
+import { SliderMenuComponent } from './header/slider-menu/slider-menu.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { UserpageComponent } from './my-account/userpage/userpage.component';
     LandingPageComponent,
     MobileHeaderComponent,
     GraphsComponent,
-    UserpageComponent
+    UserpageComponent,
+    SliderMenuComponent
   ],
   imports: [
     BrowserModule,

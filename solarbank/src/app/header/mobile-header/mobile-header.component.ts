@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-mobile-header',
@@ -6,22 +6,16 @@ import { Component, OnInit, Output, EventEmitter, HostListener } from '@angular/
   styleUrls: ['./mobile-header.component.css']
 })
 export class MobileHeaderComponent implements OnInit {
-  @Output() isSlidingMenuOpened = new EventEmitter();
-
   public isMenuOpened = false;
-
-  @HostListener('document:click', ['$event.target.classList']) onClick(classList) {
-    if (!classList.contains('sliding-menu')) {
-      this.isMenuOpened = !this.isMenuOpened;
-    }
-  }
 
   constructor() { }
 
   public ngOnInit() {
+    console.log('init', this.isMenuOpened);
   }
 
-  public toggleSlidingMenu() {
-    this.isSlidingMenuOpened.emit(this.isMenuOpened);
+  public openSlidingMenu() {
+    this.isMenuOpened = true;
+    console.log('clicked', this.isMenuOpened);
   }
 }

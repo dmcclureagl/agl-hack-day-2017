@@ -21,11 +21,14 @@
 
 .login {
     float: right;
+    margin-top: -2px;
 }
 
 .header-logo {
     height: 30px;
-    margin-top: -5px;
+    position: relative;
+    top: -7px;
+    left: -5px;
 }
 
 .login-logo {
@@ -40,43 +43,13 @@
 }
 
 .header-burger {
-    width: 18px;
-    margin-bottom: 9px;
-    margin-right: 8px;
+    width: 38px;
+    position: relative;
+    top: -7px;
+    left: -7px;
+    padding: 8px;
 }
 
 .hero-image {
     width: 100%;
-}
-
-.sliding-menu {
-    width: 200px;
-    height: 100vh;
-    background: #001CB0;
-    position: absolute;
-    z-index: 51;
-    left: -200px; 
-    box-shadow: 0 5px 13px 0 rgba(0,0,0,0.1);
-    color: white;
-    padding: 25px;
-    transition: all 1s ease;
-}
-
-.header-links {
-    padding-top: 15px;
-}
-
-.header-link {
-    letter-spacing: 1px;
-    padding-top: 15px;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.open-menu {
-    left: 0;
 }
