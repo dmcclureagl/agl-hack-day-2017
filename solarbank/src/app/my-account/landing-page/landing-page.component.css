@@ -9,6 +9,14 @@
     font-family: 'Titillium Web', sans-serif;	
     font-weight: 600;
     position: relative;
+/*=======
+    height: 520px;
+	color: #FFFFFF;	
+    font-family: 'Titillium Web', sans-serif;	
+    font-weight: 600;
+    background-image: url('/assets/img/solar-panel.jpg');
+    background-size: cover;
+>>>>>>> 76f67598042c47aaca7a8b7624b3ab47b101d0cc*/
 }
 
 .landing-info-box {
@@ -48,9 +56,28 @@
 .image {
     width: 148px;
     height: 148px;
-    background: lightblue;
     border: 1px solid #D8D8D8;
+    border-radius: 4px;
+    background-color: #FFF;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
     margin: 0 auto;
+}
+
+.image i {
+    font-size: 110px;
+    padding-top: 20px;
+}
+
+.yellow {
+    color: #FFE344;
+}
+
+.blue {
+    color: #001CB0;
+}
+
+.green {
+    color: #36a723;
 }
 
 .header {
@@ -61,7 +88,7 @@
 
 .body {
     padding-top: 10px;
-	font-size: 14px;	
+	font-size: 14px;
     line-height: 19px;
 }
 

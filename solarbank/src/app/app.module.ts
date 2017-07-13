@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -9,23 +10,36 @@ import { MobileHeaderComponent } from './header/mobile-header/mobile-header.comp
 // Kendo
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DialogModule } from '@progress/kendo-angular-dialog';
+import { LayoutModule } from '@progress/kendo-angular-layout';
+import { ChartsModule } from '@progress/kendo-angular-charts';
+import 'hammerjs';
+
+// Services
+import { LoggedInService } from './logged-in.service';
 
 import { LandingPageComponent } from './my-account/landing-page/landing-page.component';
+import { GraphsComponent } from './my-account/graphs/graphs.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     LandingPageComponent,
-    MobileHeaderComponent
+    MobileHeaderComponent,
+    GraphsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     DialogModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    LayoutModule,
+    HttpModule,
+    ChartsModule
   ],
-  providers: [],
+  providers: [
+    LoggedInService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
