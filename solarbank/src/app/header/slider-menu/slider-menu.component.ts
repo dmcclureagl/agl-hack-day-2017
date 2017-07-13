@@ -24,16 +24,19 @@ export class SliderMenuComponent implements OnInit {
         clickedComponent = clickedComponent.parentNode;
     } while (clickedComponent);
     if (inside) {
-    } else if (!inside) {
+    } else {
         this.isMenuOpened = false;
     }
 
     if (event.target.classList.contains('header-burger')) {
       this.isMenuOpened = true;
     }
+
+    if (event.target.classList.contains('header-link')) {
+      this.isMenuOpened = false;
+    }
   }
 
   ngOnInit() {
   }
-
 }
