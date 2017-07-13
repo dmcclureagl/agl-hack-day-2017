@@ -1,7 +1,7 @@
 .container {
     display:-moz-box;
     display:-webkit-box;
-    display:box;
+    display:flex;
     -moz-box-orient:horizontal;
     -webkit-box-orient:horizontal;
     box-orient:horizontal;
