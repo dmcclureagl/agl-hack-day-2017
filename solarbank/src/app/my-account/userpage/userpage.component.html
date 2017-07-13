@@ -1,5 +1,48 @@
 <div class="page-container">
-  <p>
-    userpage works!
-  </p>
+  <div class="container">
+      <div class="column">
+          <div class="title">Your energy storage</div>
+          <div class="graph">
+            <kendo-chart style="height: 400px;">
+              <ng-template kendoChartDonutCenterTemplate>
+                <h3>55 kWh</h3>
+              </ng-template>
+              <kendo-chart-series>
+                <kendo-chart-series-item
+                    type="donut" [data]="data"
+                    categoryField="kind" field="share">
+                  <kendo-chart-series-item-labels
+                    [content]="labelContent"
+                    color="#fff" background="none">
+                  </kendo-chart-series-item-labels>
+                </kendo-chart-series-item>
+              </kendo-chart-series>
+              <kendo-chart-legend [visible]="false"></kendo-chart-legend>
+            </kendo-chart>
+          </div>
+      </div>
+      <div class="column">
+          <div class="title">Current buying rate</div>
+          <div class="amount">$5</div>
+          <div class="explaination">
+            <p>
+              This amount is the current buying rate that we will offer you for your solar generation.
+            </p>
+            <p>
+              Selling this amount now will take all your currently stored battery energy back into the grid.
+            </p>
+            <button type="button" class="user-button big-button hero-button" (click)="sell()">Sell Now</button>
+          </div>
+      </div>
+      <div class="column">
+          <div class="title">Wallet balance</div>
+          <div class="amount">$150</div>
+          <p>
+            The above is your current wallet balance, you can withdraw this into your bank account. Use it to take money off your next electricity bill or donate.
+          </p>
+          <button type="button" class="user-button-50 big-button hero-button" (click)="deposit('bank')">Deposit it</button>
+          <button type="button" class="user-button-50 big-button hero-button" (click)="deposit('power')">Pay your bill</button>
+          <button type="button" class="user-button-100-2 big-button hero-button" (click)="deposit('donate')">Donate</button>
+      </div>
+  </div>
 </div>
