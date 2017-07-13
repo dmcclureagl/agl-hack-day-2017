@@ -8,6 +8,9 @@
     text-transform: uppercase;
 	font-weight: 600;	
     letter-spacing: 2px;	
+    z-index: 50;
+    background-color: white;
+    box-shadow: 0 5px 13px 0 rgba(0,0,0,0.1);
 }
 
 @media (max-width: 835px) {
@@ -44,4 +47,36 @@
 
 .hero-image {
     width: 100%;
+}
+
+.sliding-menu {
+    width: 200px;
+    height: 100vh;
+    background: #001CB0;
+    position: absolute;
+    z-index: 51;
+    left: -200px; 
+    box-shadow: 0 5px 13px 0 rgba(0,0,0,0.1);
+    color: white;
+    padding: 25px;
+    transition: all 1s ease;
+}
+
+.header-links {
+    padding-top: 15px;
+}
+
+.header-link {
+    letter-spacing: 1px;
+    padding-top: 15px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.open-menu {
+    left: 0;
 }

@@ -1,4 +1,11 @@
 .landing {
+    padding: 85px 0;
+}
+
+@media (max-width: 830px) {
+  .landing {
+    padding: 50px 0;
+  }
 }
 
 .landing-bg {
@@ -127,8 +134,78 @@
     width: 100%;
 }
 
+.hero-image-mob {
+    width: 100%;
+    display: none;
+    height: calc(100vh - 50px);
+}
+
 @media (max-width: 992px) {
-  .hero-image {
-    width: 1000px;
-  }
+    .hero-image {
+        width: 1000px;
+        display: none;
+    }
+
+    .hero-image-mob {
+        display: block;
+        height: 450px;
+    }
+
+    .hero-content-wrap {
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .landing-info-box {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .landing-bg {
+        height: calc(100vh - 50px);
+    }
+
+    .landing-info-box {
+        display: block;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .harness, .earn, .cash-out {
+        padding: 65px;
+    }
+
+    .hero-image-mob {
+        height: calc(100vh - 50px);
+    }
+
+    .hero-content-wrap {
+        margin-left: 0;
+        padding: 0 25px;
+        margin-top: -20px;
+    }
+
+    .hero-header {
+        font-size: 32px;
+        line-height: normal;
+    }
+
+    .header-body {
+        font-size: 20px;
+        font-weight: normal;
+        line-height: normal;
+    }
+
+    .hero-button {
+        margin-top: 30px;
+    }
+
+    .harness, .earn, .cash-out {
+        padding: 25px;
+    }
+
+    .header {
+        padding-top: 15px;
+    }
 }
