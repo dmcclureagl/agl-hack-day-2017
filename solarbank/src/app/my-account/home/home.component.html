@@ -1,18 +1,18 @@
 <div class="container">
-<h1>Home Component</h1>
+  <h1>Home Component</h1>
 
-<button kendoButton *ngIf="!opened" (click)="open()">Do not click this button</button>
+  <button kendoButton *ngIf="!opened" (click)="open()">Do not click this button</button>
 
-<kendo-dialog *ngIf="opened" (close)="close()">
-  <div style="text-align: center; margin: 30px;">
-    <h4>Enter your e-mail below to unlock.</h4>
-    <p>
-      <input class="k-textbox" placeholder="Your e-mail here" style="width: 300px;" />
-    </p>
-    <p>
-      <button kendoButton primary="true" style="width: 300px;">GET MY $10 OFF</button>
-    </p>
-    <a href="#">No thanks!</a>
-  </div>
-</kendo-dialog>
+  <kendo-dialog *ngIf="opened" (close)="close()">
+    <div style="text-align: center; margin: 30px;">
+      <h4>Enter your e-mail below to unlock.</h4>
+      <p>
+        <input class="k-textbox" placeholder="Your e-mail here" style="width: 300px;" />
+      </p>
+      <p>
+        <button kendoButton primary="true" style="width: 300px;">GET MY $10 OFF</button>
+      </p>
+      <a href="#">No thanks!</a>
+    </div>
+  </kendo-dialog>
 </div>

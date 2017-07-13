@@ -1,0 +1,36 @@
+/* Larger than mobile */
+@media (min-width: 400px) {
+    .app-container {
+        width: 100%;
+    }
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+    .app-container {
+        width: 550px;
+    }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+    .app-container {
+        width: 750px;
+    }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+    .app-container {
+        width: 1000px;
+    }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1400px) {}
+
+.app-container {
+    padding-top: 85px;
+    width: 1400px;
+    margin: 0px auto;
+}
