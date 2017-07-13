@@ -13,14 +13,14 @@ import { LayoutModule } from '@progress/kendo-angular-layout';
 import { ChartsModule } from '@progress/kendo-angular-charts';
 import 'hammerjs';
 
-import { HomeComponent } from './my-account/home/home.component';
+import { LandingPageComponent } from './my-account/landing-page/landing-page.component';
 import { GraphsComponent } from './my-account/graphs/graphs.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent,
+    LandingPageComponent,
     GraphsComponent
   ],
   imports: [

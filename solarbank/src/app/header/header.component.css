@@ -53,4 +53,9 @@
 a {
     color: #666666;
     text-decoration: none;
+    padding: 10px;
+}
+
+.active-link {
+    color: #001CB0;
 }
