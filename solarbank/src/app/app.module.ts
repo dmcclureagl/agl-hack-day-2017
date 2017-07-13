@@ -21,6 +21,7 @@ import { LandingPageComponent } from './my-account/landing-page/landing-page.com
 import { GraphsComponent } from './my-account/graphs/graphs.component';
 import { UserpageComponent } from './my-account/userpage/userpage.component';
 import { SliderMenuComponent } from './header/slider-menu/slider-menu.component';
+import { WalletComponent } from './my-account/wallet/wallet.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { SliderMenuComponent } from './header/slider-menu/slider-menu.component'
     MobileHeaderComponent,
     GraphsComponent,
     UserpageComponent,
-    SliderMenuComponent
+    SliderMenuComponent,
+    WalletComponent
   ],
   imports: [
     BrowserModule,

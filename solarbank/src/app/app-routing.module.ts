@@ -4,11 +4,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { LandingPageComponent } from './my-account/landing-page/landing-page.component';
 import { GraphsComponent } from './my-account/graphs/graphs.component';
 import { UserpageComponent } from './my-account/userpage/userpage.component';
+import { WalletComponent } from './my-account/wallet/wallet.component';
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
   { path: 'home', component: UserpageComponent },
-  { path: 'graphs', component: GraphsComponent }
+  { path: 'graphs', component: GraphsComponent },
+  { path: 'wallet', component: WalletComponent }
 ];
 
 @NgModule({
