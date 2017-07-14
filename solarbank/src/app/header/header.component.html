@@ -3,12 +3,12 @@
     <div class="header-text" routerLink="/">SOLARBANK</div>
     <div class="header-links" *ngIf="!isAuthenticated()">
       <div class="header-link"><a routerLink="/" routerLinkActive="active-link">Home</a></div>
-      <div class="header-link"><a routerLink="/how-it-works" routerLinkActive="active-link">FAQS</a></div>
-      <div class="header-link"><a routerLink="/cash-out-my-earnings" routerLinkActive="active-link">Cash out my earnings</a></div>
+      <div class="header-link"><a routerLink="/faqs" routerLinkActive="active-link">FAQS</a></div>
     </div>
     <div class="header-links" *ngIf="isAuthenticated()">
       <div class="header-link"><a routerLink="/home" routerLinkActive="active-link">Dashboard</a></div>
-      <!-- <div class="header-link"><a routerLink="/graphs" routerLinkActive="active-link">Graths</a></div> -->
+      <div class="header-link"><a routerLink="/faqs" routerLinkActive="active-link">FAQS</a></div>
+      <div class="header-link"><a routerLink="/cash-out-my-earnings" routerLinkActive="active-link">Cash out my earnings</a></div>
     </div>
     <div class="header-login">
       <img src="assets/svg/icon_person.svg" alt="login icon" class="login-logo">

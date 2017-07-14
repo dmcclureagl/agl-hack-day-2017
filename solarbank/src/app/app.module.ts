@@ -22,6 +22,7 @@ import { GraphsComponent } from './my-account/graphs/graphs.component';
 import { UserpageComponent } from './my-account/userpage/userpage.component';
 import { SliderMenuComponent } from './header/slider-menu/slider-menu.component';
 import { WalletComponent } from './my-account/wallet/wallet.component';
+import { FaqComponent } from './my-account/faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { WalletComponent } from './my-account/wallet/wallet.component';
     GraphsComponent,
     UserpageComponent,
     SliderMenuComponent,
-    WalletComponent
+    WalletComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,
