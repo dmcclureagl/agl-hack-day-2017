@@ -16,6 +16,7 @@ import 'hammerjs';
 
 // Services
 import { LoggedInService } from './logged-in.service';
+import { WalletService } from './wallet.service';
 
 import { LandingPageComponent } from './my-account/landing-page/landing-page.component';
 import { GraphsComponent } from './my-account/graphs/graphs.component';
@@ -46,7 +47,8 @@ import { FaqComponent } from './my-account/faq/faq.component';
     ChartsModule
   ],
   providers: [
-    LoggedInService
+    LoggedInService,
+    WalletService
   ],
   bootstrap: [AppComponent]
 })

@@ -32,12 +32,12 @@
         <div class="icon">
           <img class="current-rate" src="assets/svg/cashmoneymillionaire.svg">
         </div>
-        <div class="title">Current rate: $4.05</div>
+        <div class="title">Current rate: ${{rate}}</div>
         <div class="explaination">
           <p>
             This is the current buying rate that we’ll pay you if you decide to sell your surplus energy.
           </p>
-          <button type="button" class="user-button big-button hero-button" (click)="sell()">Sell Now</button>
+          <button type="button" class="user-button big-button hero-button" (click)="sellNow()">Sell Now</button>
           <span>This figure will go directly into your balance.</span>
         </div>
       </div>
@@ -45,7 +45,7 @@
           <div class="icon">
             <img class="balance" src="assets/svg/wallet.svg">
           </div>
-          <div class="title">Balance: $26.40</div>
+          <div class="title">Balance: ${{balance}}</div>
           <div class="explaination">
             <p>
               Withdraw your earnings, donate them, or add them to your AGL account balance.
@@ -60,11 +60,13 @@
   </div>
 </div>
 
-<!--<kendo-dialog title="Action required" (close)="onClose()">
-  <p style="margin: 30px; text-align: center;">Do you accept?</p>
+<kendo-dialog *ngIf="openDialog" (close)="onClose()">
+  <p style="margin: 30px; text-align: center; font-size: 16px; color: #333;">
+    Are you sure you want to sell now?
+  </p>
 
-<kendo-dialog-actions>
-  <button kendoButton (click)="onAccept()">Yes</button>
-  <button kendoButton (click)="onDecline()">No</button>
-</kendo-dialog-actions>
-</kendo-dialog>-->
+  <kendo-dialog-actions>
+    <button class="accept-button" (click)="onAccept()">Yes</button>
+    <button class="accept-button-white" (click)="onDecline()">No</button>
+  </kendo-dialog-actions>
+</kendo-dialog>
