@@ -1,6 +1,6 @@
 <div class="page-container">
   <div class="intro">
-    Hi, {{name}} welcome to your Solarbank dashboard.
+    Hi {{name}}, welcome to your Solarbank dashboard.
   </div>
   <div class="container">
       <div class="column">
@@ -50,7 +50,7 @@
             <p>
               Withdraw your earnings, donate them, or add them to your AGL account balance.
             </p>
-            <button type="button" class="user-button-100-2 big-button hero-button" (click)="deposit('donate')">Cash out my earnings</button>
+            <button type="button" class="user-button-100-2 big-button hero-button" routerLink="/cash-out-my-earnings">Cash out my earnings</button>
           </div>
       </div>
   </div>
@@ -64,6 +64,10 @@
   <p style="margin: 30px; text-align: center; font-size: 16px; color: #333;">
     Are you sure you want to sell now?
   </p>
+  <p><span (click)="resetValues()">Reset Wallet Balance</span></p>
+  <p><span (click)="update('rainy')">Update for rainy day</span></p>
+  <p><span (click)="update('cloudy')">Update for cloudy day</span></p>
+  <p><span (click)="update('sunny')">Update for sunny day</span></p>
 
   <kendo-dialog-actions>
     <button class="accept-button" (click)="onAccept()">Yes</button>

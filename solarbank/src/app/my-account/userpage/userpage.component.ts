@@ -52,4 +52,26 @@ export class UserpageComponent implements OnInit {
     this.openDialog = false;
   }
 
+  public update(type) {
+    if (type === 'rainy') {
+      this.walletService.currentRate = 100;
+      this.rate = 100;
+      this.openDialog = false;
+    } else if (type === 'sunny') {
+      this.walletService.currentRate = 200;
+      this.rate = 200;
+      this.openDialog = false;
+    } else {
+      this.walletService.currentRate = 300;
+      this.rate = 300;
+      this.openDialog = false;
+    }
+  }
+
+  public resetValues() {
+    this.walletService.walletBalance = 100;
+    this.openDialog = false;
+    this.balance = this.walletService.walletBalance;
+  }
+
 }

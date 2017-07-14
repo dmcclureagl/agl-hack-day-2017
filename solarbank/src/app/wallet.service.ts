@@ -3,8 +3,8 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class WalletService {
 
-  public currentRate = 4.05;
-  public walletBalance = 26.40;
+  public currentRate = 50;
+  public walletBalance = 100;
 
   constructor() { }
 
