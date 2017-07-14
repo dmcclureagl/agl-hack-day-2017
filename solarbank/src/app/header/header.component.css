@@ -55,7 +55,7 @@
 }
 
 .login-logo {
-	height: 15px;	
+	height: 15px;
     display: inline-block;
     margin-bottom: -1px;
 }
@@ -73,4 +73,21 @@ a {
 
 .active-link {
     color: #001CB0;
+}
+
+.header-balance {
+    font-family: "Titillium Web";
+    display: inline-block;
+    font-size: 16px;
+    float: right;
+    padding-right: 40px;
+    padding-top: 10px;
+}
+
+.header-balance span {
+    color: #001CB0;
+}
+
+.header-balance span:hover {
+    cursor: pointer;
 }

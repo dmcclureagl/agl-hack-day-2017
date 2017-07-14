@@ -14,6 +14,9 @@
       <img src="assets/svg/icon_person.svg" alt="login icon" class="login-logo">
       <div class="login-text" (click)="login()">{{loginName()}}</div>
     </div>
+    <div class="header-balance" *ngIf="isAuthenticated()">
+      BALANCE: <span>$26.40</span>
+    </div>
   </div>
 </div>
 
