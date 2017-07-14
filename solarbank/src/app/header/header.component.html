@@ -7,12 +7,15 @@
       <div class="header-link"><a routerLink="/cash-out-my-earnings" routerLinkActive="active-link">Cash out my earnings</a></div>
     </div>
     <div class="header-links" *ngIf="isAuthenticated()">
-      <div class="header-link"><a routerLink="/home" routerLinkActive="active-link">My Account</a></div>
+      <div class="header-link"><a routerLink="/home" routerLinkActive="active-link">Dashboard</a></div>
       <!-- <div class="header-link"><a routerLink="/graphs" routerLinkActive="active-link">Graths</a></div> -->
     </div>
     <div class="header-login">
       <img src="assets/svg/icon_person.svg" alt="login icon" class="login-logo">
       <div class="login-text" (click)="login()">{{loginName()}}</div>
+    </div>
+    <div class="header-balance" *ngIf="isAuthenticated()">
+      BALANCE: <span>$26.40</span>
     </div>
   </div>
 </div>

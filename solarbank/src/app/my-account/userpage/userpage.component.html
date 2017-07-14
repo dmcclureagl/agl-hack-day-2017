@@ -4,9 +4,8 @@
   </div>
   <div class="container">
       <div class="column">
-          <div class="title">Your energy storage</div>
           <div class="graph">
-            <kendo-chart style="height: 400px;">
+            <kendo-chart style="height: 300px;">
               <ng-template kendoChartDonutCenterTemplate>
                 <h3>55 kWh</h3>
               </ng-template>
@@ -23,34 +22,49 @@
               <kendo-chart-legend [visible]="false"></kendo-chart-legend>
             </kendo-chart>
           </div>
-      </div>
-      <div class="column">
-          <div class="title">Current buying rate</div>
-          <div class="amount">$5</div>
+          <div class="title">Your energy storage</div>
           <div class="explaination">
-            <p>
-              This amount is the current buying rate that we will offer you for your solar generation.
-            </p>
-            <p>
-              Selling this amount now will take all your currently stored battery energy back into the grid.
-            </p>
-            <button type="button" class="user-button big-button hero-button" (click)="sell()">Sell Now</button>
+            <p>Currently you are making more energy than you are consuming.</p>
+            <p>When you sell, we will direct this energy back into the grid.</p>
           </div>
       </div>
       <div class="column">
-          <div class="title">Wallet balance</div>
-          <div class="amount">$150</div>
+        <div class="icon">
+          <img class="current-rate" src="assets/svg/cashmoneymillionaire.svg">
+        </div>
+        <div class="title">Current rate: $4.05</div>
+        <div class="explaination">
           <p>
-            The above is your current wallet balance, you can withdraw this into your bank account. Use it to take money off your next electricity bill or donate.
+            This is the current buying rate that we’ll pay you if you decide to sell your surplus energy.
           </p>
-          <button type="button" class="user-button-50 big-button hero-button" (click)="deposit('bank')">Deposit it</button>
-          <button type="button" class="user-button-50 big-button hero-button" (click)="deposit('power')">Pay your bill</button>
-          <button type="button" class="user-button-100-2 big-button hero-button" (click)="deposit('donate')">Donate</button>
+          <button type="button" class="user-button big-button hero-button" (click)="sell()">Sell Now</button>
+          <span>This figure will go directly into your balance.</span>
+        </div>
+      </div>
+      <div class="column">
+          <div class="icon">
+            <img class="balance" src="assets/svg/wallet.svg">
+          </div>
+          <div class="title">Balance: $26.40</div>
+          <div class="explaination">
+            <p>
+              Withdraw your earnings, donate them, or add them to your AGL account balance.
+            </p>
+            <button type="button" class="user-button-100-2 big-button hero-button" (click)="deposit('donate')">Cash out my earnings</button>
+          </div>
       </div>
   </div>
 
   <div class="tile">
-    <div class="title">Market</div>
     <app-graphs class="graph"></app-graphs>
   </div>
 </div>
+
+<!--<kendo-dialog title="Action required" (close)="onClose()">
+  <p style="margin: 30px; text-align: center;">Do you accept?</p>
+
+<kendo-dialog-actions>
+  <button kendoButton (click)="onAccept()">Yes</button>
+  <button kendoButton (click)="onDecline()">No</button>
+</kendo-dialog-actions>
+</kendo-dialog>-->

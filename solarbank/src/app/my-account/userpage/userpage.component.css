@@ -21,27 +21,37 @@
 }
 
 .title {
-    font-size: 16px;
-    font-family: 'Titillium Web', sans-serif;
-    text-transform: uppercase;
+    font-size: 24px;
     font-weight: bold;
+    font-family: "Open Sans";
+    text-align: center;
+    margin-top: -9px;
 }
 
-.amount {
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 55px;
+.explaination {
     text-align: center;
-    padding: 35px 0;
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333;
+    max-width: 280px;
+    margin: 0px auto;
+}
+
+.explaination span {
+    font-size: 12px;
+    color: #333333;
+    margin-top: 15px;
+    display: block;
 }
 
 .user-button {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .user-button-100-2 {
     width: 100%;
-    margin-top: 18px;
+    margin-top: 10px;
 }
 
 .user-button-50 {
@@ -52,21 +62,34 @@
 
 .intro {
     padding-left: 20px;
-    font-size: 20px;
-    padding-top: 20px;
+    font-size: 26px;
+    padding-top: 70px;
     padding-bottom: 0px;
 }
 
 .tile {
-    background-color: white;
-    box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
-    padding: 12px 20px;
-    margin: 20px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.icon {
+    width: 100%;
+    height: 300px;
+}
+
+.current-rate {
+    padding-top: 92px;
+    width: 227px;
+    margin-left: 80px;
+}
+
+.balance {
+    margin-top: 63px;
+    width: 200px;
+    margin-left: 100px;
 }
 
 .graph {
-    padding-top: 20px;
-    padding-bottom: 20px;
     display: block;
 }
 
