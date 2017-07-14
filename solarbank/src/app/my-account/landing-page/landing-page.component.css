@@ -22,7 +22,7 @@
     margin-top: -10%;
     width: 100%;
     max-width: 830px;
-    height: 400px;
+    height: 340px;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -34,40 +34,26 @@
 
 .harness {
     flex: 1;
-    padding: 35px;
-    padding-top: 65px;
+    padding: 40px;
 }
 
 .earn {
     flex: 1;
-    padding: 35px;
-    padding-top: 65px;
+    padding: 40px;
 }
 
 .cash-out {
     flex: 1;
-    padding: 35px;
-    padding-top: 65px;
+    padding: 40px;
 }
 
 .image {
     width: 148px;
-    height: 148px;
-    border: 1px solid #D8D8D8;
+    height: 126px;
     border-radius: 4px;
     background-color: #FFF;
-    box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
     margin: 0 auto;
-}
-
-.image i {
-    font-size: 110px;
-    padding-top: 20px;
-}
-
-.image img {
-    width: 115px;
-    margin-top: 7px;
+    position: relative;
 }
 
 .yellow {
@@ -137,6 +123,25 @@
     width: 100%;
     display: none;
     height: calc(100vh - 50px);
+}
+
+.harness-logo {
+    width: 156px;
+}
+
+.earn-logo {
+    width: 117px;
+}
+
+.cash-logo {
+    width: 106px;
+}
+
+.image-logo {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 @media (max-width: 992px) {

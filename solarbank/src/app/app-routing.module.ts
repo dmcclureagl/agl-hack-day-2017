@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: '', component: LandingPageComponent },
   { path: 'home', component: UserpageComponent },
   { path: 'graphs', component: GraphsComponent },
-  { path: 'wallet', component: WalletComponent }
+  { path: 'cash-out-my-earnings', component: WalletComponent }
 ];
 
 @NgModule({
