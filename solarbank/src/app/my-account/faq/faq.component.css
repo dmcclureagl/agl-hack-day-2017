@@ -1,0 +1,29 @@
+.faqs {
+    margin-top: 20px;
+}
+
+.q {
+    font-weight: bold;
+}
+
+.a {
+    padding-bottom: 20px;
+}
+
+.col-container {
+    display: table;
+    width: 100%;
+}
+
+.col {
+    display: table-cell;
+    padding-right: 80px;
+}
+
+h1 {
+    color: #333333;
+    font-family: "Titillium Web";
+    font-size: 26px;
+    font-weight: normal;
+    margin-top: 50px;
+}
